@@ -1,0 +1,31 @@
+Index     Data                                                        
+0         -1                                                          
+1         1                                                           
+2         6                                                           
+3         5040                                                        
+4         5                                                           
+5         Full SPRING 2026 Test File                                  
+6         Calculating Factorial                                       
+7         Click in the CONSOLE WINDOW, and enter the value 7 for n:   
+8         1                                                           
+9         1                                                           
+10        5040                                                        
+11        8                                                           
+12        The value of 7! is:                                         
+13                                                                    
+14        After the WHILE, Count is:                                  
+15        ---------------------------                                 
+16        5                                                           
+17        0                                                           
+18        Count =                                                     
+19        6                                                           
+20        0                                                           
+21        Count is > 6                                                
+22        Count is <= 6                                               
+23        5                                                           
+24        After the GOTO looping, Count is:                           
+25        A TABLE OF SQUARES for 1 to 5                               
+26        1                                                           
+27        25                                                          
+28        6                                                           
+29        All done.                                                   

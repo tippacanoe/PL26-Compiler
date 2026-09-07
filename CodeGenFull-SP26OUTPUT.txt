@@ -1,0 +1,86 @@
+Logan Morsman, 8872, CS4100/5100, SPRING 2026
+INPUT FILE TO PROCESS IS: CodeGenFULL-SP26.txt
+0001 PROGRAM CodegenFull;
+0002 {Spring 2026}
+0003   n, factorial : INTEGER;
+0004   count : integer;
+0005   JumpBack, Out: LABEL;
+0006
+0007 begin
+0008 WRITELN("Full SPRING 2026 Test File");
+0009
+0010 WRITELN("Calculating Factorial");
+0011 WRITELN("Click in the CONSOLE WINDOW, and enter the value 7 for n:");
+0012 readln(n);  {should be same result as doing n := 7;}
+0013 factorial := 1;
+0014 count := 1;
+0015 WHILE count <= n DO
+0016   begin
+0017   factorial := factorial*count;
+0018   count := count + 1
+0019   end;
+0020 WRITELN("The value of 7! is:"); {Expected result is 5040}
+0021 WRITELN(factorial);
+0022 WRITELN(" "); {blank line}
+0023
+0024 WRITELN("After the WHILE, Count is: ");
+0025 WRITELN(count);
+0026 WRITELN("--------------------------- "); {blank line}
+0027
+0028 {count should be 8 at this point}
+0029 jumpback: if count <= 5 then goto Out;
+0030   WRITELN("Count = ");
+0031   WRITELN(count);
+0032   if count > 6 then
+0033     WRITELN("Count is > 6")
+0034   else
+0035     WRITELN("Count is <= 6");
+0036   count := count -1;
+0037   GOTO JumpBack;
+0038 Out:
+0039
+0040 WRITELN("After the GOTO looping, Count is: ");
+0041 WRITELN(count);
+0042
+0043 writeln(" ");
+0044 writeln("A TABLE OF SQUARES for 1 to 5");
+0045
+0046 for n := 1 to 5 do
+0047   begin
+0048   writeln(n*n)
+0049   end;
+0050
+0051   WRITELN("All done.")
+0052 end.
+Success.
+Full SPRING 2026 Test File
+Calculating Factorial
+Click in the CONSOLE WINDOW, and enter the value 7 for n:
+> 7
+The value of 7! is:
+5040
+
+After the WHILE, Count is:
+8
+---------------------------
+Count =
+8
+Count is > 6
+Count =
+7
+Count is > 6
+Count =
+6
+Count is <= 6
+After the GOTO looping, Count is:
+5
+
+A TABLE OF SQUARES for 1 to 5
+1
+4
+9
+16
+25
+All done.
+Execution terminated by program STOP.
+Done.

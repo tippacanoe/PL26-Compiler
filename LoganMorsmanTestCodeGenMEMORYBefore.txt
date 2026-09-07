@@ -1,0 +1,47 @@
+Index     Data                                                                                                                        
+0         -1                                                                                                                          
+1         1                                                                                                                           
+2         0                                                                                                                           
+3         0                                                                                                                           
+4         0                                                                                                                           
+5         0                                                                                                                           
+6         0                                                                                                                           
+7         0                                                                                                                           
+8         0                                                                                                                           
+9         0                                                                                                                           
+10        0                                                                                                                           
+11        0                                                                                                                           
+12        0                                                                                                                           
+13        This is my custom test file for the SP26 compiler language PL26.                                                            
+14                                                                                                                                    
+15        Calculating sum. Please enter a number to find the sum of all numbers counting up to it                                     
+16        1                                                                                                                           
+17        0                                                                                                                           
+18        0                                                                                                                           
+19        0                                                                                                                           
+20        sum =                                                                                                                       
+21        Printing product of integers:                                                                                               
+22        0                                                                                                                           
+23        0                                                                                                                           
+24        4                                                                                                                           
+25        0                                                                                                                           
+26        5                                                                                                                           
+27        13                                                                                                                          
+28        1024                                                                                                                        
+29        500                                                                                                                         
+30        0                                                                                                                           
+31        0                                                                                                                           
+32        68                                                                                                                          
+33        0                                                                                                                           
+34        2                                                                                                                           
+35        0                                                                                                                           
+36        0                                                                                                                           
+37        0                                                                                                                           
+38        0                                                                                                                           
+39        counting from 10 to 20                                                                                                      
+40        10                                                                                                                          
+41        20                                                                                                                          
+42        0                                                                                                                           
+43        0                                                                                                                           
+44        This text will never print                                                                                                  
+45        If you got here, then the program did not crash. Thanks for the great semester! I am going to get some much needed sleep.   

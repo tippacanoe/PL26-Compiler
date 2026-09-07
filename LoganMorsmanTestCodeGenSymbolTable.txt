@@ -1,0 +1,34 @@
+Index  Token                                                                                                                         Purpose    Type         Address
+0      0                                                                                                                             CONSTANT   INTEGERTYPE  0
+1      1                                                                                                                             CONSTANT   INTEGERTYPE  16
+2      -1                                                                                                                            CONSTANT   INTEGERTYPE  0
+3      LoganMorsmanTestCode                                                                                                          PROGRAM    PROGRAMTYPE  0
+4      x                                                                                                                             VARIABLE   INTEGERTYPE  2
+5      y                                                                                                                             VARIABLE   INTEGERTYPE  3
+6      z                                                                                                                             VARIABLE   INTEGERTYPE  4
+7      n                                                                                                                             VARIABLE   INTEGERTYPE  5
+8      sum                                                                                                                           VARIABLE   INTEGERTYPE  6
+9      m                                                                                                                             VARIABLE   INTEGERTYPE  7
+10     product                                                                                                                       VARIABLE   INTEGERTYPE  8
+11     temp                                                                                                                          VARIABLE   INTEGERTYPE  9
+12     counter1                                                                                                                      VARIABLE   INTEGERTYPE  10
+13     counter2                                                                                                                      VARIABLE   INTEGERTYPE  11
+14     counter3                                                                                                                      VARIABLE   INTEGERTYPE  12
+15     jumpout                                                                                                                       LABEL      LABELTYPE    -1
+16     "This is my custom test file for the SP26 compiler language PL26."                                                            CONSTANT   STRINGTYPE   13
+17     " "                                                                                                                           CONSTANT   STRINGTYPE   14
+18     "Calculating sum. Please enter a number to find the sum of all numbers counting up to it"                                     CONSTANT   STRINGTYPE   15
+19     "sum = "                                                                                                                      CONSTANT   STRINGTYPE   20
+20     "Printing product of integers: "                                                                                              CONSTANT   STRINGTYPE   21
+21     4                                                                                                                             CONSTANT   INTEGERTYPE  24
+22     5                                                                                                                             CONSTANT   INTEGERTYPE  26
+23     13                                                                                                                            CONSTANT   INTEGERTYPE  27
+24     1024                                                                                                                          CONSTANT   INTEGERTYPE  28
+25     500                                                                                                                           CONSTANT   INTEGERTYPE  29
+26     68                                                                                                                            CONSTANT   INTEGERTYPE  32
+27     2                                                                                                                             CONSTANT   INTEGERTYPE  34
+28     "counting from 10 to 20"                                                                                                      CONSTANT   STRINGTYPE   39
+29     10                                                                                                                            CONSTANT   INTEGERTYPE  40
+30     20                                                                                                                            CONSTANT   INTEGERTYPE  41
+31     "This text will never print"                                                                                                  CONSTANT   STRINGTYPE   44
+32     "If you got here, then the program did not crash. Thanks for the great semester! I am going to get some much needed sleep."   CONSTANT   STRINGTYPE   45

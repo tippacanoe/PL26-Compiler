@@ -1,0 +1,24 @@
+{This file includes the basic WRITELN, READLN, and EXPRESSION tests.
+}
+PROGRAM CodegenBASIC;
+
+   Result, Multiplier: integer;
+begin
+WRITELN("BASIC TEST File Spring 2026");
+
+WRITELN("String printout test:  Hello World");
+
+Result := 3;
+WRITELN("First, Result is initialized to");
+WRITELN(Result);
+
+Multiplier := 2;
+Result := Result *(3+Multiplier)+ Result + 4*Multiplier/2 - 1;  {The result: 21}
+WRITELN("After calculation, Result is now ");
+WRITELN(Result);
+WRITELN("Click in Console Window, and input a value of 25 for Result: ");
+READLN(Result);
+WRITELN("After READLN, Result is now ");
+WRITELN(Result);
+WRITELN("All done.")
+end. 

@@ -1,0 +1,52 @@
+PROGRAM CodegenFull;
+{Spring 2026}
+  n, factorial : INTEGER;
+  count : integer;
+  JumpBack, Out: LABEL;
+  
+begin
+WRITELN("Full SPRING 2026 Test File");
+
+WRITELN("Calculating Factorial");
+WRITELN("Click in the CONSOLE WINDOW, and enter the value 7 for n:");
+readln(n);  {should be same result as doing n := 7;}
+factorial := 1;
+count := 1;
+WHILE count <= n DO
+  begin
+  factorial := factorial*count;
+  count := count + 1
+  end;
+WRITELN("The value of 7! is:"); {Expected result is 5040}
+PRINTLN(factorial);
+WRITELN(" "); {blank line}
+
+WRITELN("After the WHILE, Count is: ");
+WRITELN(count);
+WRITELN("--------------------------- "); {blank line}
+
+{count should be 8 at this point}
+jumpback: if count <= 5 then goto Out;
+  WRITELN("Count = ");
+  WRITELN(count);
+  if count > 6 then
+    WRITELN("Count is > 6")
+  else
+    WRITELN("Count is <= 6");
+  count := count -1;
+  GOTO JumpBack;
+Out:
+
+WRITELN("After the GOTO looping, Count is: ");
+WRITELN(count);
+
+writeln(" ");
+writeln("A TABLE OF SQUARES for 1 to 5");
+
+for n := 1 to 5 do
+  begin 
+  writeln(n*n)
+  end;
+ 
+  WRITELN("All done.")
+end.

@@ -1,0 +1,89 @@
+Logan Morsman, 8872, CS4100/5100, SPRING 2026
+INPUT FILE TO PROCESS IS: LoganMorsmanTestCodeGen.txt
+0001 PROGRAM LoganMorsmanTestCode;
+0002 x, y, z : INTEGER;
+0003 n, sum, m, product, temp : INTEGER;
+0004 counter1, counter2, counter3 : INTEGER;
+0005 jumpout : LABEL;
+0006
+0007 begin
+0008
+0009 WRITELN("This is my custom test file for the SP26 compiler language PL26.");
+0010 WRITELN(" "); {Whitespace}
+0011
+0012 WRITELN("Calculating sum. Please enter a number to find the sum of all numbers counting up to it"); {Prompt user for input}
+0013 readln(n); {Get User Input}
+0014
+0015 {begin sum structure}
+0016 counter1 := 1;
+0017 sum := 1;
+0018 WHILE counter1 <= n DO
+0019    begin
+0020    sum := sum + counter1;
+0021    counter1 := counter1 + 1
+0022    end;
+0023 WRITELN("sum = ");
+0024 WRITELN(sum);
+0025 WRITELN(" ");
+0026
+0027 {now we will print a product of integers}
+0028 product := 1;
+0029 m := 1;
+0030 WRITELN("Printing product of integers: ");
+0031 WRITELN(" ");
+0032 REPEAT
+0033    product := m * product;
+0034    m := m + 1;
+0035    WRITELN(product);
+0036 UNTIL m >= 4;
+0037
+0038 {testing more arithmetic w/ relational operators}
+0039 x := 5;
+0040 y := 13;
+0041 z := 1024;
+0042 temp := (x*(y+500) + 68) * 2;
+0043 if y*z < temp THEN WRITELN(y*z) ELSE WRITELN(temp);
+0044
+0045 {time to demonstrate for loop w/ counting}
+0046 WRITELN("counting from 10 to 20");
+0047 for n := 10 to 20 do
+0048    begin
+0049    writeln(n)
+0050    end;
+0051
+0052 {Testing a forward jump}
+0053 GOTO jumpout;
+0054 WRITELN("This text will never print");
+0055
+0056 jumpout: WRITELN("If you got here, then the program did not crash. Thanks for the great semester! I am going to get some much needed sleep.")
+0057
+0058 end.
+Success.
+This is my custom test file for the SP26 compiler language PL26.
+
+Calculating sum. Please enter a number to find the sum of all numbers counting up to it
+> 10
+sum =
+56
+
+Printing product of integers:
+
+1
+2
+6
+5266
+counting from 10 to 20
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+If you got here, then the program did not crash. Thanks for the great semester! I am going to get some much needed sleep.
+Execution terminated by program STOP.
+Done.

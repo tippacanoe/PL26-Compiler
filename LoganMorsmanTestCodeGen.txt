@@ -1,0 +1,58 @@
+PROGRAM LoganMorsmanTestCode;
+x, y, z : INTEGER;
+n, sum, m, product, temp : INTEGER;
+counter1, counter2, counter3 : INTEGER;
+jumpout : LABEL;
+
+begin
+
+WRITELN("This is my custom test file for the SP26 compiler language PL26.");
+WRITELN(" "); {Whitespace}
+
+WRITELN("Calculating sum. Please enter a number to find the sum of all numbers counting up to it"); {Prompt user for input}
+readln(n); {Get User Input}
+
+{begin sum structure}
+counter1 := 1;
+sum := 1;
+WHILE counter1 <= n DO
+	begin
+	sum := sum + counter1;
+	counter1 := counter1 + 1
+	end;
+WRITELN("sum = ");
+WRITELN(sum);
+WRITELN(" ");
+
+{now we will print a product of integers}
+product := 1;
+m := 1;
+WRITELN("Printing product of integers: ");
+WRITELN(" ");
+REPEAT 
+	product := m * product;
+	m := m + 1;
+	WRITELN(product);
+UNTIL m >= 4;
+
+{testing more arithmetic w/ relational operators}
+x := 5;
+y := 13;
+z := 1024;
+temp := (x*(y+500) + 68) * 2;
+if y*z < temp THEN WRITELN(y*z) ELSE WRITELN(temp);
+
+{time to demonstrate for loop w/ counting}
+WRITELN("counting from 10 to 20");
+for n := 10 to 20 do
+	begin
+	writeln(n)
+	end;
+	
+{Testing a forward jump}
+GOTO jumpout;
+WRITELN("This text will never print");
+
+jumpout: WRITELN("If you got here, then the program did not crash. Thanks for the great semester! I am going to get some much needed sleep.")
+
+end.
